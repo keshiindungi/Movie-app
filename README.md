@@ -8,7 +8,7 @@ A modern, highly responsive movie discovery web application built with **React**
 
 Once you host your application (using platforms like Netlify, Vercel, or GitHub Pages), update this section with your live URLs!
 
-* **⚡ Live Production Site:**(https://lambent-pithivier-5da39f.netlify.app/)
+* **⚡ Live Production Site:**(https://agent-6a38e23ecee12945--lambent-pithivier-5da39f.netlify.app/)
 * **📂 Frontend Repository:**(https://github.com/keshiindungi/Movie-app.git)
 
 ---
