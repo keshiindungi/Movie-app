@@ -30,7 +30,7 @@ import { useMovieContext } from '../context/MovieContext'
         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
          <div className="movie-overlay">
             <button className="Favorite-btn" onClick={onFavoriteClick}>
-                🤍
+                {favorite ? "❤️" : "🤍"}
             </button>
          </div>
      </div>
