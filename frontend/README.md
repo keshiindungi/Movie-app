@@ -1,46 +1,16 @@
-# 🎬 CineSphere - Movie Web Application
+# React + Vite
 
-A modern, highly responsive movie discovery web application built with **React**, **Vite**, and **React Router**. The application communicates directly with **The Movie Database (TMDB) API** to fetch live updates on trending movies, search for custom titles, and seamlessly manage a persistent favorites gallery.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🔗 Deployment & Live Links
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Once you host your application (using platforms like Netlify, Vercel, or GitHub Pages), update this section with your live URLs!
+## React Compiler
 
-* **⚡ Live Production Site:** [👉 Click Here to View Live App](https://your-deployment-link-here.netlify.app)
-* **📂 Frontend Repository:** [GitHub Code Link](https://github.com/your-username/movie-app)
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
----
+## Expanding the ESLint configuration
 
-## ✨ Features
-
-* **🔥 Live Movie Feed:** Renders trending titles straight from the TMDB backend service.
-* **🔍 Dynamic Search Bar:** Instantly lookup movies globally through specialized API endpoints.
-* **❤️ Global State Favorites:** Save or remove movies from a personalized collection using React Context.
-* **💾 Local Storage Persistence:** Hardened, lazy-initialized caching layers keep your favorites perfectly saved even after a full browser refresh.
-* **📱 Fully Responsive:** Clean grid styling adjustments configured across mobile, tablet, and desktop views.
-
----
-
-## 🛠️ Tech Stack & Architecture
-
-* **Framework:** React 18+ (with Vite for blindingly fast hot-reloading compilation)
-* **Routing:** React Router DOM (Declarative client-side routing)
-* **State Management:** React Context API (Custom provider and unified hooks architecture)
-* **Styling:** Native CSS Grid & Flexbox layout alignments
-
-### 📂 Directory Structure Highlight
-```text
-src/
-├── components/
-│   ├── MovieCard.jsx     # Individual card layout with action toggle buttons
-│   └── NavBar.jsx        # Navigation switchboard structure
-├── context/
-│   └── MovieContext.jsx  # Context Provider managing global favorites arrays
-├── pages/
-│   ├── Home.jsx          # Search and trending grid platform landing
-│   └── Favorites.jsx     # Defensive, fall-back key mapped user gallery
-├── css/                  # Native architectural styling sheets
-├── App.jsx               # Wrapped main route assembly
-└── main.jsx              # Application bootstrap mount point
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
