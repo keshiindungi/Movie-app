@@ -9,6 +9,9 @@ function NavBar () {
         <div className="navbar-links">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/favorites" className="nav-link">Favorites</Link>
+          
+            <Link to="/watchlist" className="nav-link">Watchlist</Link>
+                <Link to="/continue-watching" className="nav-link">Continue Watching</Link>
         </div>
     </nav>
     );

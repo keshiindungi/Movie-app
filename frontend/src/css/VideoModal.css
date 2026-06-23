@@ -1,0 +1,59 @@
+/* 1. The Backdrop: Fills the entire browser screen, darkens the rest of the app */
+.modal-overlay {
+    position: fixed; /* Fixed ensures it locks to the viewport window, NOT the movie card */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); /* Smooth cinematic dark backdrop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Higher stack depth ensures it stays on top of navbars and grids */
+}
+
+/* 2. The Content Box: Sets a maximum readable movie dimensions frame */
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 850px; /* Great cinema proportions for desktop */
+    background: #141414;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
+
+/* 3. The Close Button Layout */
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10001;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.modal-close-btn:hover {
+    background: #e50914; /* Netflix Red alert hover */
+    transform: scale(1.1);
+}
+
+/* 4. Aspect Ratio Box: Keeps widescreen 16:9 proportions intact automatically */
+.player-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 standard cinematic aspect ratio formula */
+    background: #000;
+}

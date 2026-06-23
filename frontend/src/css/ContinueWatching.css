@@ -1,0 +1,207 @@
+/* Container layout */
+.continue-watching-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.continue-watching-container h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Movie Grid */
+.continue-watching-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Empty State */
+.continue-watching-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 4rem auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.continue-watching-empty h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.continue-watching-empty p {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+}
+
+/* Responsive Scaling */
+@media (max-width: 600px) {
+    .continue-watching-container {
+        padding: 1rem;
+    }
+    .continue-watching-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+}
+/* Container Page Styling */
+.favorites {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.favorites h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Base Layout Grid */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Custom Continue Watching Card */
+.cw-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cw-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Poster Aspect Ratio */
+.cw-poster {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    background-color: #2a2a2a;
+}
+
+/* Progress Bar Components */
+.cw-progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #333333;
+    position: relative;
+}
+
+.cw-progress-fill {
+    height: 100%;
+    background: #e50914; /* Netflix Red theme color */
+    transition: width 0.3s ease-in-out;
+}
+
+/* Meta Text Info Panel */
+.cw-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 0.5rem;
+}
+
+.cw-info h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cw-info p {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin: 0;
+}
+
+/* Action Control Buttons */
+.cw-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto; /* Pushes buttons to bottom of card equalizing height */
+    padding-top: 0.5rem;
+}
+
+.search-button {
+    flex: 2;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-button:hover {
+    background-color: #b81d24;
+}
+
+.cw-remove-btn {
+    flex: 1;
+    background-color: transparent;
+    color: #b3b3b3;
+    border: 1px solid #444444;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cw-remove-btn:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border-color: #777777;
+}
+
+/* Empty State Container */
+.favorites-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 4rem auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Responsiveness Rules */
+@media (max-width: 600px) {
+    .favorites {
+        padding: 1rem;
+    }
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1rem;
+    }
+    .cw-poster {
+        height: 220px;
+    }
+    .cw-info h3 {
+        font-size: 1rem;
+    }
+}

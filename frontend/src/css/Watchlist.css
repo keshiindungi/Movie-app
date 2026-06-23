@@ -1,0 +1,62 @@
+/* Container padding for the entire page */
+.favorites {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.favorites h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Responsive grid setup for your MovieCard components */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Empty State Styling */
+.favorites-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 4rem auto;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.favorites-empty h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.favorites-empty p {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Quick responsive tweak for smaller screens */
+@media (max-width: 600px) {
+    .favorites {
+        padding: 1rem;
+    }
+    
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    
+    .favorites-empty {
+        margin: 2rem 1rem;
+        padding: 2rem 1rem;
+    }
+}

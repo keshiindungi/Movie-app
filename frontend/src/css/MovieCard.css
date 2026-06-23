@@ -122,3 +122,31 @@
     font-size: 1.2rem;
   }
 }
+
+/* Center and design the play button inside the hover overlay */
+.movie-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-overlay-btn {
+    background-color: rgba(229, 9, 20, 0.9); /* Netflix Red */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.play-overlay-btn:hover {
+    transform: scale(1.05);
+    background-color: rgb(245, 9, 20);
+}
